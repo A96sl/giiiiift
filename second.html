@@ -17,8 +17,10 @@
     <div class="aya-star"></div>
 
     <!-- Buttons -->
-    <button id="backButton">Back</button>
-    <button id="nextButton">Next</button>
+    <div class="buttons">
+      <button id="backButton">Back</button>
+      <button id="nextButton">Next</button>
+    </div>
   </div>
 
   <footer class="footer">
@@ -26,17 +28,15 @@
   </footer>
 
   <script>
-    // Back button
+    // Make buttons active
     document.getElementById("backButton").addEventListener("click", () => {
       window.location.href = "index.html";
     });
-
-    // Next button
     document.getElementById("nextButton").addEventListener("click", () => {
       window.location.href = "third.html";
     });
 
-    // Generate random twinkling stars
+    // Generate twinkling stars
     const starsContainer = document.querySelector('.stars');
     const numberOfStars = 150;
 
