@@ -4,7 +4,7 @@ body {
   font-family: 'Arial', sans-serif;
   color: #fff;
   overflow: hidden;
-  background: #000;
+  background: linear-gradient(to bottom, #000010, #000);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,6 +49,10 @@ button {
 button:hover {
   background-color: #fff;
   color: #1a1a3d;
+}
+
+.buttons {
+  margin-top: 20px;
 }
 
 /* BUTTON ANIMATION */
@@ -103,7 +107,7 @@ button:hover {
   background-color: #fff;
   border-radius: 50%;
   box-shadow: 0 0 30px 15px #fff, 0 0 60px 30px rgba(255,255,255,0.3);
-  margin: 0 auto;
+  margin: 30px auto;
   animation: shine floatAya 3s ease-in-out infinite;
   position: relative;
   z-index: 2;
@@ -122,6 +126,7 @@ button:hover {
 /* CERTIFICATE PAGE */
 .certificate {
   margin-top: 40px;
+  text-align: center;
 }
 
 .certificate img {
